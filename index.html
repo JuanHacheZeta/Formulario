@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>registro_alumno</title>
+    <script src="funciones.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+ 
+  
+<body>
+   
+    <div class="contenedor-form registrar">
+        <h2>!Haz tu registro¡</h2>
+        <div class="scrollable-content">
+            <form action="#">
+
+                <div class="contenedor-input">
+                    <input name="Numero de Control" id="numeroControl" maxlength="8" required>
+                    <label for="#">Numero de control</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Apellido paterno" required>
+                    <label for="#">Apellido paterno </label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Apellido materno" required>
+                    <label for="#">Apellido materno </label>
+
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Nombre" required>
+                    <label for="#">Nombre </label>
+                </div>
+
+                <div class="contenedor-input">
+                    <div class="select-wrapper">
+                        <select class="Genero" name="genero" required>
+                            <option value="" disabled selected>Género</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="indefinido">Indefinido</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contenedor-input">
+                    <input type="date" required id="fecha-nacimiento" name="fecha">
+                    
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Correo" required>
+                    <label for="#">Correo </label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Celular"  maxlength="10" required>
+                    <label for="#">Celular</label>
+                </div>
+
+                <div class="contenedor-input">
+                    <input name="Dirección" required>
+                    <label for="#">Dirección </label>
+                </div>
+
+                <div class="contenedor-input">
+                    <div class="select-wrapper">
+                        <select class="perido escolar" name="periodo" required>
+                            <option value="" disabled selected>Periodo escolar</option>
+                            <option value="2024">AGO-DIC 2024</option>
+                            <option value="2024">ENE-JUN 2024</option>
+                            <option value="2023">AGO-DIC 2023</option>
+                            <option value="2023">ENE-JUN 2023</option>
+                            <option value="2022">AGO-DIC 2022</option>
+                            <option value="2022">ENE-JUN 2022</option>
+                            <option value="2021">AGO-DIC 2021</option>
+                            <option value="2021">ENE-JUN 2021</option>
+                            <option value="2020">AGO-DIC 2020</option>
+                            <option value="2020">ENE-JUN 2020</option>
+                            <option value="2019">AGO-DIC 2019</option>
+                            <option value="2019">ENE-JUN 2019</option>         
+                        </select>
+                    </div>
+                </div>
+
+                <div class="contenedor-input">
+                    <div class="select-wrapper">
+                        <select class="Carrera" name="Carrera" required>
+                            <option value="" disabled selected>Carrera</option>
+                            <option value="ISC">Ingenieria en Sistemas Computacionales</option>
+                            <option value="IA">Ingenieria en Agronomía</option>
+                            <option value="LB">Licenciatura en Biología</option>
+                            <option value="IGE">Ingenieria en Gestión Empresarial</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button onclick="validarNumeroControl()" type="submit" class="boton">Registrarme</button>
+                <p id="resultado"></p>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+ 
+</html>
